@@ -1,7 +1,7 @@
 #IssueTracker
 Medium-IssueTracker is a sample application built with Meteor, Iron Scaffolding and AutoForms.
 
-![alt tag]()
+![alt tag](https://raw.githubusercontent.com/seeschweiler/medium-issuetracker/master/images/it-start.png)
 
 ## Tutorial avaiable on Medium.com
 Find the tutorial for building this application on Medium. The tutorial includes a step-by-step description you can follow to develop this application from scratch.
