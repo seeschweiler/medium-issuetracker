@@ -1,0 +1,44 @@
+<template name="IssuesList">
+  <h1>Issues List</h1>
+  <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+
+          {{#each issues}}
+            <tr>
+              <td>{{title}}</td>
+              <td>{{description}}</td>
+              <td>{{dueDateFormatted}}</td>
+              <td>
+                {{#if priorityHigh}}
+                  <span class="label label-danger">{{priority}}</span>
+                {{/if}}
+
+                {{#if priorityMedium}}
+                  <span class="label label-warning">{{priority}}</span>
+                {{/if}}
+
+                {{#if priorityLow}}
+                  <span class="label label-success">{{priority}}</span>
+                {{/if}}
+              </td>
+              <td>
+                {{#linkTo route='editIssue'}}
+                  <i class="fa fa-pencil-square-o"></i>
+                {{/linkTo}}
+              </td>
+            </tr>
+          {{/each}}
+
+        </tbody>
+      </table>
+
+</template>
